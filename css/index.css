@@ -1,10 +1,6 @@
 * {
     box-sizing: border-box;
 }
-
-/* $blueLight: #C1CFD9;
-$blueDark: #2E3641;
-$red: #F97E76; */
 body {
     /* background-color: #fff; */
     background-color: #C1CFD9;
@@ -19,7 +15,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
 }
 
 .container:before {
@@ -68,90 +64,55 @@ body {
 }
 
 /* Start  text-out*/
-.container .text-out {
+.container .butons-editor .text-out {
     line-height: 1.5;
     background: rgba(255, 255, 255, 0.3);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
     letter-spacing: .5px;
-    height: 50vh;
-
+    min-height: 50vh;
+    outline: none;
 }
-
 /* End  text-out*/
 /* Start intro-text  */
-.container .intro-text{
+.container .intro-text {
     padding: 10px;
     text-align: center;
-    height: 20px;
+    height: 100px;
     font-weight: bold;
+    font-size: 30px;
+    line-height: 1.7;   
 }
 /* End intro-text  */
-/* start input-txt  */
-.container .input-txt {}
-.container .input-txt .buttons{
-    background-color: #a7bfe0;
+/* Start Buttons  */
+.container .butons-editor .buttons {
+    /* background: rgba(255, 255, 255, 0.3); */
+    /* background-color: #a7bfe0; */
+    background-color: #FFE8FF;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    position: relative;
+    flex-wrap: wrap;
 }
-.container .input-txt .buttons button{
+@media (max-width: 767px) {
+    .container .butons-editor .buttons{
+    justify-content: start;
+
+    }
+}
+
+.container .butons-editor .buttons button {
     background-color: #fff;
     border: none;
     padding: 5px 10px;
     border-radius: 6px;
     cursor: pointer;
-}
-.container .input-txt .buttons {}
-
-.container .input-txt textarea {
-    resize: none;
-    width: 100%;
-    outline: none;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 0 2px;
-    background: #fff;
-    transition: background 300ms, color 300ms;
+    position: relative;
 }
 
-.container .input-txt textarea:hover,
-.container .input-txt textarea:focus {
-    /* background: rgb(0, 0, 0); */
-    background-color: #4E4351;
-    /* background:radial-gradient(at 9% 32%, hsla(222, 75%, 60%, 1) 0px, transparent 50%); */
-    color: #fff;
-    /* animation: styleChange 3s infinite alternate; */
-    border: 5px solid;
-}
-
-@keyframes styleChange {
-    0% {
-        border-color: #ccc;
-        /* Start with a light gray background */
-        /* transform: scale(1); */
-    }
-
-    50% {
-        border-color: #ff0000;
-        /* Change to red at 50% of the animation */
-        /* transform: scale(1.2); */
-    }
-
-    100% {
-        border-color: #00ff00;
-        /* Change to green at the end of the animation */
-        /* transform: scale(1); */
-    }
-}
-
-.container .input-txt textarea:hover::placeholder,
-.container .input-txt textarea:focus::placeholder {
-    color: #fff;
-}
-
-/* End input-txt  */
+/* End Buttons  */
