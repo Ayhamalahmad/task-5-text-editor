@@ -8,7 +8,7 @@ This is a simple example of a text editor built using JavaScript's `execCommand`
 - **Heading Styles:** Apply H1, H2, and H3 heading styles to the selected text.
 - **Text Alignment:** Align selected text to the left, center, or right.
 - **Text Animation:** Demonstrates a simple text animation effect.
-- **Copy Text:** Allows copying selected text to the clipboard (Note: Copy command may have limitations).
+- **Copy Text:** Allows copying selected text to the clipboard 
 
 
 
