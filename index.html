@@ -3,24 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <title>Steps</title>
   </head>
   <body>
     <div class="container">
-      <div class="prgress">
-        <div class="pro-s"></div>
-        <span class="active">1</span>
-        <span class="">2</span>
-        <span class="">3</span>
-        <span class="">4</span>
+      <div class="intro-text"> </div>
+      <!-- <div id="editorjs-container"></div> -->
+
+      <div id="editorjs" contenteditable class="text-out">
+        <!-- <div class="blob"></div> -->
       </div>
-      <div class="buttons">
-        <button class="previous">Previous</button>
-        <button class="next">Next</button>
+      <div class="input-txt">
+        <div class="buttons">
+          <button class="italic"><i class="fas fa-italic"></i></button>
+          <button class="bold"><i class="fas fa-bold"></i></button>
+          <button class="align-right">
+            <i class="fas fa-align-right"></i>
+          </button>
+          <button class="align-left"><i class="fas fa-align-left"></i></button>
+          <button class="align-center">
+            <i class="fas fa-align-center"></i>
+          </button>
+          <!-- <button class=""><i class="fas fa-closed-captioning"></i></button> -->
+          <button class="reset"><i class="far fa-times-circle"></i></i></i></button>
+          <button class="selectAll"><i class="far fa-object-group"></i></button>
+          <button class="underline"><i class="fas fa-underline"></i></button>
+          <button class="undo"><i class="fas fa-undo"></i></button>
+          <button class="redo"><i class="fas fa-redo"></i></button>
+          <button class="H1">H1</button>
+          <button class="H2">H2</button>
+          <button class="H3">H3</button>
+          <button class="delete">delete</button>
+          <button class="copy">copy</button>
+        </div>
+        <!-- <textarea
+          name=""
+          cols="30"
+          rows="10"
+          placeholder="Start typing your text here..."
+        >
+        </textarea> -->
       </div>
     </div>
-    <script src="javascript/index.js"></script>
+
+    <script type="module" src="javascript/index.js"></script>
+    <!-- <script type="module" src="editor.js"></script> -->
   </body>
 </html>
