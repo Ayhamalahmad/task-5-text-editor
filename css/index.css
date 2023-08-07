@@ -1,0 +1,85 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+
+  * {
+      box-sizing: border-box;
+  }
+
+  body {
+      background-color: #f0f0f0;
+  }
+
+  .container {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: auto;
+      margin-right: auto;
+      /* position: relative; */
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+      background-color: darkcyan;
+  }
+
+  /*small*/
+  @media (max-width: 767px) {
+      .container {
+          width: 100%;
+      }
+
+  }
+
+  @media (min-width: 768px) {
+      .container {
+          width: 750px;
+      }
+
+  }
+
+  /*Medium*/
+  @media (min-width: 992px) {
+      .container {
+          width: 750px;
+      }
+  }
+
+  /*Large*/
+  @media (min-width: 1200px) {
+      .container {
+          width: 1170px;
+      }
+  }
+
+  .container .prgress {
+    width: 50%;
+    height: 3px;
+    background-color: red;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .container .prgress .pro-s {
+    width: 0%;
+    position: absolute;
+    height: 3px;
+    z-index: 2;
+    background-color: blue;
+  }
+
+  .container .prgress span:not(.pro-s) {
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+  }
+  .container .prgress span:not(.pro-s).active{
+    border: 1px solid white;
+  }
